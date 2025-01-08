@@ -1,8 +1,12 @@
 "use client";
 import { animate } from "framer-motion";
-import React, { useEffect } from "react";
+import React, { useEffect, useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { Cover } from "./framerUI/cover";
+
+type AnimationSequence = Array<
+  [string, Record<string, any>, { duration: number }]
+>;
 
 export function CardPortfolio() {
   return (
@@ -21,58 +25,31 @@ export function CardPortfolio() {
 }
 
 const Skeleton = () => {
-  const scale = [1, 1.1, 1];
-  const transform = ["translateY(0px)", "translateY(-4px)", "translateY(0px)"];
-  const sequence = [
-    [
-      ".circle-1",
-      {
-        scale,
-        transform,
-      },
-      { duration: 0.8 },
-    ],
-    [
-      ".circle-2",
-      {
-        scale,
-        transform,
-      },
-      { duration: 0.8 },
-    ],
-    [
-      ".circle-3",
-      {
-        scale,
-        transform,
-      },
-      { duration: 0.8 },
-    ],
-    [
-      ".circle-4",
-      {
-        scale,
-        transform,
-      },
-      { duration: 0.8 },
-    ],
-    [
-      ".circle-5",
-      {
-        scale,
-        transform,
-      },
-      { duration: 0.8 },
-    ],
-  ];
+  // Memorizar todo dentro de useMemo
+  const sequence: AnimationSequence = useMemo(() => {
+    const scale = [1, 1.1, 1];
+    const transform = [
+      "translateY(0px)",
+      "translateY(-4px)",
+      "translateY(0px)",
+    ];
+
+    return [
+      [".circle-1", { scale, transform }, { duration: 0.8 }],
+      [".circle-2", { scale, transform }, { duration: 0.8 }],
+      [".circle-3", { scale, transform }, { duration: 0.8 }],
+      [".circle-4", { scale, transform }, { duration: 0.8 }],
+      [".circle-5", { scale, transform }, { duration: 0.8 }],
+    ];
+  }, []);
 
   useEffect(() => {
-    // @ts-ignore
     animate(sequence, {
       repeat: Infinity,
       repeatDelay: 1,
     });
-  }, []);
+  }, [sequence]);
+
   return (
     <div className="px-2 overflow-hidden max-w-full h-full relative flex flex-row items-center justify-center gap-1">
       <div className="flex flex-row justify-between items-center">
