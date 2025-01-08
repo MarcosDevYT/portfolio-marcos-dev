@@ -4,8 +4,13 @@ import React, { useEffect, useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { Cover } from "./framerUI/cover";
 
+type AnimationProperties = {
+  scale: number[];
+  transform: string[];
+};
+
 type AnimationSequence = Array<
-  [string, Record<string, any>, { duration: number }]
+  [string, AnimationProperties, { duration: number }]
 >;
 
 export function CardPortfolio() {
@@ -16,7 +21,7 @@ export function CardPortfolio() {
           <Skeleton />
         </CardSkeletonContainer>
         <CardDescription>
-          <i className="ri-arrow-up-s-line text-xl md:text-[2vw]"></i>
+          <i className="ri-arrow-up-s-line text-xl md:text-2xl"></i>
           Mas de mis Trabajos
         </CardDescription>
       </Cover>
@@ -54,19 +59,19 @@ const Skeleton = () => {
     <div className="px-2 overflow-hidden max-w-full h-full relative flex flex-row items-center justify-center gap-1">
       <div className="flex flex-row justify-between items-center">
         <Container className="h-4 w-4 md:h-8 md:w-8 circle-1">
-          <i className="ri-terminal-box-line text-lg md:text-[1.5vw]"></i>
+          <i className="ri-terminal-box-line text-lg md:text-xl"></i>
         </Container>
         <Container className="h-8 w-8 md:h-12 md:w-12 circle-2">
-          <i className="ri-javascript-line text-yellow-300 text-xl md:text-[2.1vw]"></i>
+          <i className="ri-javascript-line text-yellow-300 text-xl md:text-2xl"></i>
         </Container>
         <Container className="h-12 w-12 md:h-16 md:w-16 circle-3">
-          <i className="ri-reactjs-line text-blue-400 text-2xl md:text-[2.8vw]"></i>
+          <i className="ri-reactjs-line text-blue-400 text-2xl md:text-4xl"></i>
         </Container>
         <Container className="h-8 w-8 md:h-12 md:w-12 circle-4">
-          <i className="ri-nextjs-fill text-slate-950 text-xl md:text-[2.1vw]"></i>
+          <i className="ri-nextjs-fill text-slate-950 text-xl md:text-2xl"></i>
         </Container>
         <Container className="h-4 w-4 md:h-8 md:w-8 circle-5">
-          <i className="ri-code-box-line text-lg md:text-[1.5vw]"></i>
+          <i className="ri-code-box-line text-lg md:text-xl"></i>
         </Container>
       </div>
     </div>
@@ -102,7 +107,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "flex flex-col mt-20 md:mt-0 items-center justify-center text-lg lg:text-[1.2vw] font-normal text-neutral-600 dark:text-neutral-400 max-w-sm",
+        "flex flex-col mt-20 md:mt-0 items-center justify-center text-lg lg:text-xl font-normal text-neutral-600 dark:text-neutral-400 max-w-sm",
         className
       )}
     >

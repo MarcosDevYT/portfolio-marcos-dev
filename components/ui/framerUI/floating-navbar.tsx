@@ -8,22 +8,23 @@ import {
 } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const FloatingNav = ({
-  navItems,
-  className,
-}: {
-  navItems: {
-    link: string;
-    icon?: JSX.Element;
-  }[];
-  className?: string;
-}) => {
-  const { scrollYProgress } = useScroll();
+// Tipo para los elementos de navegación
+type NavItem = {
+  link: string;
+  icon?: JSX.Element;
+};
 
+// Props del componente
+type FloatingNavProps = {
+  navItems: NavItem[];
+  className?: string;
+};
+
+export const FloatingNav = ({ navItems, className }: FloatingNavProps) => {
+  const { scrollYProgress } = useScroll();
   const [visible, setVisible] = useState(false);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
       const direction = current! - scrollYProgress.getPrevious()!;
 
@@ -38,8 +39,6 @@ export const FloatingNav = ({
       }
     }
   });
-
-  // Scroll Sections
 
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
@@ -99,11 +98,11 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          "flex max-w-fit gap-3 fixed top-4 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black  z-40 px-4 py-1  items-center justify-center space-x-4",
+          "flex max-w-fit gap-3 fixed top-4 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black z-40 px-4 py-1 items-center justify-center space-x-4",
           className
         )}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem, idx) => (
           <div
             key={idx}
             className={`transition duration-150 rounded-full cursor-pointer nav__link`}
