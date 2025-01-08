@@ -1,21 +1,13 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Noto_Sans_Display, Inter } from "next/font/google";
 import "remixicon/fonts/remixicon.css";
 import "./globals.css";
 import Footer from "@/components/layout/footer";
 import Sidebar from "@/components/layout/sidebar";
 
-const noto = localFont({
-  src: "./fonts/NotoSansDisplay.ttf",
-  variable: "--font-noto-sans-display",
-  weight: "100 900",
-});
+const inter = Inter({ subsets: ["latin"] });
 
-const inter = localFont({
-  src: "./fonts/inter.ttf",
-  variable: "--font-inter",
-  weight: "100 900",
-});
+const noto = Noto_Sans_Display({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio - Marcos Morua",
@@ -30,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${noto.variable} antialiased  bg-bg text-textColor`}
+        className={`${inter.className} ${noto.className} antialiased  bg-bg text-textColor`}
       >
         <Sidebar />
         {children}
