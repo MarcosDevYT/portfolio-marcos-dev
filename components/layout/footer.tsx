@@ -38,7 +38,7 @@ const Footer = () => {
               <TransitionLink
                 href={item.link}
                 key={item.id}
-                className="text-lg text-titleColor transition-colors duration-500 cursor-pointer font-medium hover:text-mainColor"
+                className="text-lg transition-colors duration-500 cursor-pointer font-medium hover:text-mainColor"
               >
                 {item.title}
               </TransitionLink>

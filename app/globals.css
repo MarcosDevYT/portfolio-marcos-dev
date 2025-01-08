@@ -437,8 +437,8 @@
   }
 
   .typing {
-    font-size: 5vw;
-    height: 6vw;
+    font-size: 3.2rem;
+    height: 3.5rem;
   }
 
   .slide-track {
@@ -488,6 +488,11 @@
 
   .card-left .card-trayectoria::before {
     left: 25.5rem;
+  }
+
+  .typing {
+    font-size: 4.5rem;
+    height: 5rem;
   }
 }
 

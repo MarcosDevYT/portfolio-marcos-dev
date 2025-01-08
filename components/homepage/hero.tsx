@@ -16,22 +16,22 @@ const Hero = () => {
         <div className="w-full h-full absolute z-1 bg-bgTransparent"></div>
         <Slider />
       </div>
-      <article className="relative flex flex-col justify-center items-center w-9/12 md:w-8/12">
+      <article className="relative flex flex-col justify-center items-center w-9/12 md:max-w-[580px] lg:max-w-[780px]">
         <div className="flex flex-col gap-1 justify-center text-center items-center mb-5 md:text-start md:items-start">
-          <p className="font-light text-lg md:text-3xl flex items-center gap-1">
+          <p className="font-light text-lg md:text-xl flex items-center gap-1">
             <span className="w-2 h-2 md:w-3 md:h-3 pt-1 bg-green-400 rounded-full border-2 border-green-500"></span>{" "}
             Online
           </p>
-          <h1 className="text-titleColor font-bold text-2xl md:text-[6.5vw] md:h-[7vw] flex items-center">
+          <h1 className="font-bold text-2xl md:text-[3.4rem] lg:text-[4.5rem] md:my-6 flex items-center">
             Hola, Aqui Marcos
-            <i className="ri-code-s-slash-line hidden md:block text-[7.5vw] font-semibold ml-8 text-indigo-800"></i>
+            <i className="ri-code-s-slash-line hidden md:block md:text-[4rem] lg:text-[6rem] font-semibold ml-6 text-indigo-800"></i>
           </h1>
-          <div className="flex gap-2 text-xl text-titleColor font-medium md:items-center md:gap-6 md:text-[5vw] md:h-[5.5vw]">
-            <i className="ri-terminal-box-line hidden md:block text-[7vw] font-medium text-indigo-800"></i>
+          <div className="flex gap-2 text-xl font-bold md:items-center md:gap-4 md:text-[3.2rem] lg:text-[4.5rem]">
+            <i className="ri-terminal-box-line hidden md:block text-[4rem] lg:text-[6rem] font-medium text-indigo-800"></i>
             <h2>Soy</h2>
             <TypeAnimation />
           </div>
-          <p className="text-sm md:text-[1.2vw] mx-1 my-3 md:leading-[1.7vw]">
+          <p className="text-sm md:text-base lg:text-lg mx-1 my-3 leading-3">
             Hola, soy Marcos, Desarrollador Web Frontend de Argentina, con 3
             años de experiencia. Con enfoque en el desarrollo de sitios web
             modernos y eficientes.

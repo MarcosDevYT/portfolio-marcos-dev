@@ -141,7 +141,7 @@ const CardsLayout = () => {
                 rel="noopener noreferrer"
                 className="ml-1 text-base font-semibold inline-flex gap-2 items-center lg:text-xl"
               >
-                <h4 className="font-medium text-titleColor">{item.title}</h4>
+                <h4 className="font-medium ">{item.title}</h4>
                 <i className="ri-external-link-line font-normal"></i>
               </Link>
             </article>
