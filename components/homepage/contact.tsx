@@ -56,7 +56,7 @@ const ContactSection: React.FC = () => {
           </p>
           {linksContact.map((item, index) => (
             <div key={index}>
-              <Link className="text-5xl" href={item.link}>
+              <Link className="text-5xl" href={item.link} target="_blank">
                 <StackTools className="w-20 h-20 md:w-24 md:h-24 !rounded-2xl">
                   {item.icon}
                 </StackTools>
@@ -64,7 +64,7 @@ const ContactSection: React.FC = () => {
             </div>
           ))}
           <a
-            className="col-span-3 text-lg font-semibold flex gap-2 w-full justify-center items-center bg-secondBg py-2 rounded-xl hover:bg-[#151519]"
+            className="col-span-3 text-lg font-semibold flex gap-2 w-full justify-center items-center bg-secondBg py-2 rounded-xl hover:bg-[#0f0f13]"
             href="/cv.pdf"
             download
           >

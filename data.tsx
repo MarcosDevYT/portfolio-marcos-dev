@@ -1,7 +1,7 @@
 import {
   BookText,
   Briefcase,
-  CoffeeIcon,
+  Facebook,
   GraduationCap,
   HomeIcon,
   PenLine,
@@ -166,13 +166,13 @@ export const heroIcons = [
     id: 1,
     title: "Youtube",
     icon: <i className="ri-youtube-line"></i>,
-    src: "https://www.youtube.com/",
+    src: "https://www.youtube.com/@MarcosDevYT",
   },
   {
     id: 2,
     title: "Github",
     icon: <i className="ri-github-line "></i>,
-    src: "https://github.com/Marcos-Pines1",
+    src: "https://github.com/MarcosDevYT",
   },
   {
     id: 3,
@@ -355,13 +355,13 @@ export const linksContact = [
     id: 2,
     title: "WhatsApp",
     icon: <i className="ri-whatsapp-line "></i>,
-    link: "https://github.com/Marcos-Pines1",
+    link: "https://wa.me/5492804031239",
   },
   {
     id: 3,
     title: "Github",
     icon: <i className="ri-github-line "></i>,
-    link: "https://github.com/Marcos-Pines1",
+    link: "https://github.com/MarcosDevYT",
   },
   {
     id: 4,
@@ -371,9 +371,9 @@ export const linksContact = [
   },
   {
     id: 5,
-    title: "Cafecito",
-    icon: <CoffeeIcon color="#fff" strokeWidth={2} size={"3rem"} />,
-    link: "https://www.linkedin.com/in/marcos-morua-a7b326295",
+    title: "Fiverr",
+    icon: <Facebook strokeWidth={1} size={"3rem"} />,
+    link: "https://es.fiverr.com/s/DB0aQdP",
   },
 ];
 

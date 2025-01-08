@@ -5,7 +5,7 @@ export default function StackTools({
   return (
     <div
       {...props}
-      className={`bg-secondBg hover:bg-[#151519] rounded-sm relative flex justify-center items-center  ${
+      className={`bg-secondBg hover:bg-[#0f0f13] rounded-sm relative flex justify-center items-center  ${
         props.className ?? ""
       }`}
     >
