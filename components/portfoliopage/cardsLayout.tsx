@@ -77,7 +77,9 @@ const CardsLayout = () => {
 
       // Restablecer los estilos del contenedor padre
       if (container) {
-        container.style = "";
+        container.style.removeProperty("propertyName"); // Elimina una propiedad específica
+        // O si quieres restablecer todos los estilos:
+        container.style.cssText = ""; // Elimina todos los estilos en línea
       }
 
       setIsAnimating(false);
