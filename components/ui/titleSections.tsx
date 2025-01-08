@@ -9,7 +9,7 @@ const TitleSections: React.FC<TitleSectionsProps> = ({ title, subtitle }) => {
   return (
     <h2
       data-heading={subtitle}
-      className="section__title text-2xl md:text-4xl lg:text-5xl mb-10 w-max font-bold leading-10 font-inter"
+      className="section__title text-2xl md:text-4xl lg:text-5xl mb-10 w-max font-bold font-inter"
     >
       {title}
     </h2>

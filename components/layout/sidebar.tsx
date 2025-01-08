@@ -13,14 +13,14 @@ const NavToggle = ({ children }: { children: React.ReactNode }) => {
   };
 
   return (
-    <nav className="flex flex-col items-center justify-center rounded-full bg-secondBg my-2 p-[0.4rem]">
+    <nav className="flex flex-col items-center justify-center rounded-full bg-secondBg my-2 p-[0.3rem] md:p-[0.45rem]">
       <button
-        className={`px-2 py-2 rounded-full nav__link  ${
+        className={`p-[0.4rem] md:px-2 rounded-full nav__link  ${
           isActive ? "active" : ""
         }`}
         onClick={toggleButton}
       >
-        <LayoutGrid className="w-6 h-6" />
+        <LayoutGrid className="w-4 h-4 md:w-6 md:h-6" />
       </button>
       <div
         className={`overflow-hidden transition-all duration-500 ${
@@ -43,7 +43,7 @@ const Sidebar = () => {
             key={index}
             className={`transition duration-150 rounded-full cursor-pointer nav__link`}
           >
-            <span className="block px-2 py-2 mt-2 rounded-full">
+            <span className="block p-[0.4rem] md:px-2 mt-2 rounded-full">
               {item.icon}
             </span>
           </TransitionLink>

@@ -34,13 +34,13 @@ const AboutSection = () => {
           <h2 className="text-xl md:text-2xl font-bold lg:text-4xl">
             Tu Desarrollador Web de Confianza
           </h2>
-          <p className="text-sm md:text-base leading-3 lg:text-lg">
+          <p className="text-sm md:text-base lg:text-lg">
             Hola 👋, aquí Marcos un desarrollador web frontend de Argentina con
             más de 3 años de experiencia en programación. Actualmente, continuo
             mi formación como Desarrollador Full Stack en CoderHouse, respaldado
             por un título en Informática Profesional y Personal.
           </p>
-          <p className="text-sm md:text-base mb-8 leading-3 lg:text-lg">
+          <p className="text-sm md:text-base mb-8 lg:text-lg">
             Mi objetivo es perfeccionar mis habilidades y aplicar soluciones
             modernas en la creación de sitios web innovadores, aprendiendo cada
             día más de este mundo del desarrollo web.

@@ -31,7 +31,7 @@ const Hero = () => {
             <h2>Soy</h2>
             <TypeAnimation />
           </div>
-          <p className="text-sm md:text-base lg:text-lg mx-1 my-3 leading-3">
+          <p className="text-sm md:text-base lg:text-lg mx-1 my-3">
             Hola, soy Marcos, Desarrollador Web Frontend de Argentina, con 3
             años de experiencia. Con enfoque en el desarrollo de sitios web
             modernos y eficientes.

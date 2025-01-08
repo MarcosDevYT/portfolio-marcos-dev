@@ -15,27 +15,53 @@ import { TbBrandFigma, TbBrandTypescript, TbSeo } from "react-icons/tb";
 export const itemsNavbar = [
   {
     title: "Inicio",
-    icon: <HomeIcon className="w-6 h-6" color="#fff" strokeWidth={2} />,
+    icon: (
+      <HomeIcon
+        className="w-4 h-4 md:w-6 md:h-6"
+        color="#fff"
+        strokeWidth={2}
+      />
+    ),
     link: "inicio",
   },
   {
     title: "Trabajos",
-    icon: <Briefcase className="w-6 h-6 " color="#fff" strokeWidth={2} />,
+    icon: (
+      <Briefcase
+        className="w-4 h-4 md:w-6 md:h-6"
+        color="#fff"
+        strokeWidth={2}
+      />
+    ),
     link: "portfolio",
   },
   {
     title: "Sobre mi",
-    icon: <BookText className="w-6 h-6 " color="#fff" strokeWidth={2} />,
+    icon: (
+      <BookText
+        className="w-4 h-4 md:w-6 md:h-6"
+        color="#fff"
+        strokeWidth={2}
+      />
+    ),
     link: "sobre-mi",
   },
   {
     title: "Herramientas",
-    icon: <Wrench className="w-6 h-6 " color="#fff" strokeWidth={2} />,
+    icon: (
+      <Wrench className="w-4 h-4 md:w-6 md:h-6" color="#fff" strokeWidth={2} />
+    ),
     link: "stack",
   },
   {
     title: "Contacto",
-    icon: <UserRound className="w-6 h-6" color="#fff" strokeWidth={2} />,
+    icon: (
+      <UserRound
+        className="w-4 h-4 md:w-6 md:h-6"
+        color="#fff"
+        strokeWidth={2}
+      />
+    ),
     link: "contacto",
   },
 ];
@@ -43,17 +69,17 @@ export const itemsNavbar = [
 export const NavBarIcons = [
   {
     name: "Inicio",
-    icon: <HomeIcon className="w-6 h-6" strokeWidth={2} />,
+    icon: <HomeIcon className="w-4 h-4 md:w-6 md:h-6" strokeWidth={2} />,
     link: "/",
   },
   {
     name: "Trabajos",
-    icon: <Briefcase className="w-6 h-6" strokeWidth={2} />,
+    icon: <Briefcase className="w-4 h-4 md:w-6 md:h-6" strokeWidth={2} />,
     link: "/portafolios",
   },
   {
     name: "Sobre mi",
-    icon: <UserRound className="w-6 h-6" strokeWidth={2} />,
+    icon: <UserRound className="w-4 h-4 md:w-6 md:h-6" strokeWidth={2} />,
     link: "/sobre-mi",
   },
 ];
