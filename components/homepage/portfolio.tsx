@@ -1,18 +1,15 @@
 import CardAnimation from "../ui/cardAnimation";
 import { CardPortfolio } from "../ui/cardPortfolio";
+import TitleSections from "../ui/titleSections";
 
 const PortfolioSection = () => {
   return (
     <section
-      className="w-full min-h-screen max-h-full relative flex flex-col items-center text-center py-20"
+      className="w-full max-h-full relative flex flex-col items-center text-center py-36"
       id="portfolio"
     >
-      <h2
-        className="section__title text-2xl md:text-4xl lg:text-[3vw] w-max font-bold leading-10 font-inter"
-        data-heading="Portafolios"
-      >
-        Mis Trabajos
-      </h2>
+      <TitleSections title="Mis Trabajos" subtitle="Portafolios" />
+
       <article className="flex flex-col justify-center items-center mx-auto xl:flex-row xl:justify-between">
         <CardAnimation
           title="Rocket Commerce"

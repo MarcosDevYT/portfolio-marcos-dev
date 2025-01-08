@@ -2,7 +2,10 @@ import {
   BookText,
   Briefcase,
   CoffeeIcon,
+  GraduationCap,
   HomeIcon,
+  PenLine,
+  University,
   UserRound,
   Wrench,
 } from "lucide-react";
@@ -431,14 +434,17 @@ export const portfolioParalax = [
 
 export const dataFormation = [
   {
+    icon: <University size={40} />,
     title: "Experiencias",
     info: "Comencé mi carrera desarrollando páginas web básicas y portafolios con HTML, CSS y JavaScript durante mi formación en una escuela técnica en informática. Este inicio me permitió adquirir experiencia práctica y afianzar mis habilidades en diseño y desarrollo frontend.",
   },
   {
+    icon: <GraduationCap size={40} />,
     title: "Formación",
     info: "Soy Técnico en Informática Profesional y Personal, con certificaciones destacadas como las de Meta, donde aprendí JavaScript, control de versiones con Git y GitHub, y desarrollo frontend con React, HTML y CSS. En CoderHouse, completé el certificado de Desarrollo Web y actualmente curso su carrera de Desarrollo Full Stack, consolidando mis conocimientos en tecnologías modernas.",
   },
   {
+    icon: <PenLine size={40} />,
     title: "Futura Formación",
     info: "Planeo especializarme en desarrollo frontend con React, Next.js y Tailwind, y realizar un diplomado en Desarrollo Full Stack en CoderHouse para mantenerme actualizado y expandir mi expertise.",
   },

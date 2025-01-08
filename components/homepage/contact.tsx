@@ -5,6 +5,7 @@ import StackTools from "../ui/stackTools";
 import Link from "next/link";
 import { useState, FormEvent } from "react";
 import emailjs from "emailjs-com";
+import TitleSections from "../ui/titleSections";
 
 const ContactSection: React.FC = () => {
   const [formMessage, setFormMessage] = useState("");
@@ -41,15 +42,11 @@ const ContactSection: React.FC = () => {
 
   return (
     <section
-      className="w-full min-h-screen max-h-full flex flex-col items-center text-center py-20"
+      className="w-full max-h-full flex flex-col items-center text-center py-28"
       id="contacto"
     >
-      <h2
-        className="section__title text-2xl mb-10 md:text-4xl lg:text-[3vw] w-max font-bold leading-10 font-inter"
-        data-heading="Encuentrame"
-      >
-        Enviame un mensaje
-      </h2>
+      <TitleSections title="Enviame un mensaje" subtitle="Encuentrame" />
+
       <article className="w-full flex flex-col gap-12 justify-center items-center lg:flex-row lg:items-start lg:justify-center">
         <aside className="max-w-[260px] md:max-w-[460px] grid grid-cols-3 gap-3">
           <p className="text-4xl md:text-5xl font-bold text-wrap font-inter">

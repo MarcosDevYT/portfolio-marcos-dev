@@ -1,18 +1,14 @@
 import CardTrayectoria from "../ui/cardTrayectoria";
+import TitleSections from "../ui/titleSections";
 
 const EducationSection = () => {
   return (
     <section
-      className="w-full min-h-screen max-h-full flex flex-col gap-12 items-center text-center py-20 "
+      className="w-full max-h-full flex flex-col gap-12 items-center text-center py-28"
       id="education"
     >
-      <h2
-        className="section__title text-2xl md:text-4xl mb-10 lg:text-[3vw] w-max font-bold leading-10 font-inter"
-        data-heading="Educación"
-      >
-        Trayectoria
-      </h2>
-      <article className="w-[280px] h-full relative">
+      <TitleSections title="Trayectoria" subtitle="Educación" />
+      <article className="mt-10 w-[280px] h-full relative">
         <div className="w-full h-[800px] md:h-[850px] flex md:justify-center">
           <div className="mx-2 w-2 h-full rounded-full bg-secondBg"></div>
         </div>
